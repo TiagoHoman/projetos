@@ -1,0 +1,15 @@
+# Insira o valor da compra
+valor_compra = float(input("Digite o valor da compra: R$ "))
+
+# Agora, vamos ver qual desconto se aplica com base no valor da compra
+if valor_compra < 200:
+   taxa =  0.05
+elif 200 <= valor_compra < 300:
+    taxa = 0.10
+else: 
+    taxa = 0.15
+
+# Agora, vamos calcular o valor final da compra com o desconto aplicado
+valor_final = valor_compra - (valor_compra * taxa)
+print(f"Parabéns! Você ganhou um desconto de {taxa*100:.0f}%!")
+print(f"O valor final da compra é: R$ {valor_final:.2f}")
